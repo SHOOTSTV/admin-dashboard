@@ -62,6 +62,18 @@ hr {
   align-items: center;
   gap: 1rem;
   margin-top: 10px;
+  cursor: pointer;
+
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffe066;
+  box-shadow: 0 2px 12px 0 rgba(25, 146, 210, 0.15);
+  transform: translateX(5px) scale(1.03);
 }
 
 /* main */
@@ -115,6 +127,11 @@ hr {
   height: 40px;
   border-radius: 50%;
 }
+.main-header-profile a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* main navbar */
 .main-navbar {
@@ -151,6 +168,14 @@ hr {
   padding: 10px 25px;
   border-radius: 25px;
   font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.main-navbar-buttons button:hover {
+  background-color: #f0b429;
+  color: #1992d2;
+  transform: scale(0.95);
+  transition: all 0.2s;
 }
 
 /* main content */
